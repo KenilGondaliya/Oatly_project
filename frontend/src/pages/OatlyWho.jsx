@@ -1,5 +1,5 @@
 import React from "react";
-import backgroundImage from "../assets/OatlyWho/backgroundImage.jpg";
+import backgroundImage from "../assets/OatlyWho/backgroundimage.jpg";
 import titleImage from "../assets/OatlyWho/packs.svg";
 import hand from "../assets/OatlyWho/hand.svg";
 import andFinally from "../assets/OatlyWho/and-finally.svg";
