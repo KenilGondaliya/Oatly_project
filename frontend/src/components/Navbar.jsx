@@ -31,6 +31,7 @@ const Navbar = () => {
     isAddToCartOpen,
     cart,
     openAddToCart,
+    navbarOpen,
   } = useProductStore();
 
   const { id } = useParams();
@@ -38,6 +39,7 @@ const Navbar = () => {
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [showSignIn, setShowSignIn] = useState(false);
   const [showSignUp, setShowSignUp] = useState(false);
+  const [isNavOpen, setIsNavOpen] = useState(false);
 
   const item = cart.find((p) => p.id === id);
 
@@ -54,6 +56,10 @@ const Navbar = () => {
   const handleOnclick = (id) => {
     setIsCartOpen(!isCartOpen);
     openAddToCart();
+  };
+  const handleOnNavbar = () => {
+    setIsNavOpen(!is);
+    navbarOpen();
   };
 
   const handleLogout = async () => {

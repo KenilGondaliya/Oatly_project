@@ -3,7 +3,6 @@ import api from "../api/api";
 import Cookies from "js-cookie";
 import axios from "axios";
 import { io } from "socket.io-client";
-import { toast } from "react-hot-toast";
 
 const API = "http://localhost:8000/api";
 
@@ -91,6 +90,7 @@ export const useProductStore = create((set, get) => ({
   isOtpOpen: false,
   isResetOpen: false,
   isAddToCartOpen: false,
+  isNavbarOpen: false,
 
   deliveryProfile: null,
 
@@ -130,6 +130,9 @@ export const useProductStore = create((set, get) => ({
 
   openAddToCart: () => set({ isAddToCartOpen: true }),
   closeAddToCart: () => set({ isAddToCartOpen: false }),
+
+  navbarOpen: () => set({ isNavbarOpen: true }),
+  navbarClose: () => set({ isNavbarOpen: false }),
 
   fetchProducts: async () => {
     if (get().loading) return;
@@ -493,7 +496,8 @@ export const useProductStore = create((set, get) => ({
           {
             ...product,
             quantity: 1,
-            totalPrice: parseFloat(product.price),
+            price: parseFloat(product.price), // Ensure price is a number
+            totalPrice: parseFloat(product.price) * 1, // Explicitly set for quantity 1
           },
         ];
       }
@@ -511,7 +515,7 @@ export const useProductStore = create((set, get) => ({
           ? {
               ...item,
               quantity: item.quantity + 1,
-              totalPrice: (item.quantity + 1) * item.price,
+              totalPrice: (item.quantity + 1) * parseFloat(item.price), // Consistent use of parseFloat
             }
           : item
       );
@@ -595,7 +599,7 @@ export const useProductStore = create((set, get) => ({
     try {
       const response = await api.post("/delivery_boy/toggle-availability");
       // console.log(response.data.isAvailable);
-      
+
       if (response?.data?.success) {
         set((state) => ({
           deliveryProfile: {
@@ -684,7 +688,7 @@ export const useProductStore = create((set, get) => ({
 
   placeOrder: async () => {
     set({ loading: true, error: null });
-    const { cart, user, fetchOrders } = get(); 
+    const { cart, user, fetchOrders } = get();
 
     if (!cart.length) {
       set({ loading: false, error: "Cart is empty" });
@@ -767,7 +771,7 @@ export const useProductStore = create((set, get) => ({
                     loading: false,
                   });
                   localStorage.removeItem("cart");
-                  await fetchOrders(); 
+                  await fetchOrders();
                   resolve(true);
                 }
               },
@@ -806,10 +810,10 @@ export const useProductStore = create((set, get) => ({
     set({ loading: true, error: null });
     try {
       const response = await api.get("/orders/my-orders");
-      console.log("Full API Response from /orders/my-orders:", response); 
-      console.log("Orders data:", response.data.orders); 
+      console.log("Full API Response from /orders/my-orders:", response);
+      console.log("Orders data:", response.data.orders);
       if (response.data.success) {
-        set({ orders: response.data.orders || [], loading: false }); 
+        set({ orders: response.data.orders || [], loading: false });
       } else {
         console.log("API success false:", response.data);
         set({ loading: false, error: "API returned success: false" });
@@ -829,7 +833,7 @@ export const useProductStore = create((set, get) => ({
       const response = await api.post("/orders/cancel", { orderId });
       console.log("Cancel Order Response:", response.data);
       if (response.data.success) {
-        await get().fetchOrders(); 
+        await get().fetchOrders();
         set({ loading: false });
       } else {
         set({
