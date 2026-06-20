@@ -197,53 +197,39 @@ Stores:
 ## 📸 Project Screenshots
 
 ### Home Page
-
-<img width="1435" height="934" alt="Screenshot 2025-03-09 202112" src="https://github.com/user-attachments/assets/f73c85aa-feb5-414f-b54e-4d667e76170e" />
-
+<img width="3910" height="973" alt="screencapture-localhost-5173-home-2026-06-20-13_46_09" src="https://github.com/user-attachments/assets/4a1b3711-c073-4d13-851c-4722af2b1d89" />
+<img width="5030" height="1010" alt="screencapture-localhost-5173-home-2026-06-20-13_46_09 (1)" src="https://github.com/user-attachments/assets/fc712bbf-ef01-423a-9607-235fc81ed388" />
 
 ### User Registration
-
-![Registration](./screenshots/register.png)
+<img width="1918" height="911" alt="Screenshot 2026-06-20 135210" src="https://github.com/user-attachments/assets/71ef5119-33c1-4c52-af71-848d153df612" />
+<img width="1915" height="949" alt="Screenshot 2026-06-20 135349" src="https://github.com/user-attachments/assets/a105be86-e4db-4586-8847-89a1a521bab4" />
 
 ### Login Page
-
-![Login](./screenshots/login.png)
+<img width="1917" height="951" alt="Screenshot 2026-06-20 135437" src="https://github.com/user-attachments/assets/0233c5de-ac16-437e-b355-eb6d0a906ce7" />
 
 ### Product Listing
-
-![Products](./screenshots/products.png)
+<img width="1920" height="2347" alt="screencapture-localhost-5173-our-products-Ice-Cream-2026-06-20-13_57_54" src="https://github.com/user-attachments/assets/f26a4da8-dabb-47c7-9140-12d439819ab1" />
 
 ### Product Details
-
-![Product Details](./screenshots/product-details.png)
+<img width="1920" height="3806" alt="screencapture-localhost-5173-our-products-oatgurt-676e4983588bb1466204e776-2026-06-20-13_59_25" src="https://github.com/user-attachments/assets/03d654e3-355a-4ef2-b538-2a65ee60bc2c" />
 
 ### Shopping Cart
-
-![Cart](./screenshots/cart.png)
+<img width="1920" height="3094" alt="screencapture-localhost-5173-checkout-2026-06-20-14_01_30" src="https://github.com/user-attachments/assets/c8c0f49f-49cb-4e10-8942-337be4ce9940" />
 
 ### Razorpay Payment
-
-![Payment](./screenshots/payment.png)
+<img width="1919" height="905" alt="Screenshot 2026-06-20 140034" src="https://github.com/user-attachments/assets/afe8db54-283b-4aba-a357-5054c11fc8a2" />
 
 ### User Dashboard
-
-![User Dashboard](./screenshots/user-dashboard.png)
+<img width="1920" height="945" alt="screencapture-localhost-5173-my-orders-2026-06-20-14_02_13" src="https://github.com/user-attachments/assets/fab01bd0-f37c-42d5-b8cb-a586afc158f0" />
 
 ### Admin Dashboard
-
-![Admin Dashboard](./screenshots/admin-dashboard.png)
+<img width="1920" height="1375" alt="screencapture-localhost-5174-2026-06-20-14_23_27" src="https://github.com/user-attachments/assets/20dc8c9b-b730-42b8-a3d6-01d86b33f429" />
 
 ### Add Product
-
-![Add Product](./screenshots/add-product.png)
+<img width="1920" height="1622" alt="screencapture-localhost-5174-2026-06-20-14_24_07" src="https://github.com/user-attachments/assets/7f7c5f09-b71b-411a-9f53-d9afcf1e80fd" />
 
 ### Delivery Dashboard
-
-![Delivery Dashboard](./screenshots/delivery-dashboard.png)
-
-### Order Tracking
-
-![Order Tracking](./screenshots/order-tracking.png)
+<img width="1920" height="945" alt="screencapture-localhost-5173-delivery-boy-2026-06-20-14_21_57" src="https://github.com/user-attachments/assets/ad1416e3-e6f2-4fbd-8c68-6c695e207e0f" />
 
 ---
 
@@ -325,13 +311,7 @@ CLIENT_URL=http://localhost:5173
 
 ## 👨‍💻 Author
 
-**Gondaliya Kenil Ashokbhai**
-
-Bachelor of Computer Application (BCA)
-
-Atmanand Saraswati Science College
-
-Academic Year: 2024-25
+**Kenil Gondaliya **
 
 ---
 
