@@ -231,6 +231,11 @@ Stores:
 ### Delivery Dashboard
 <img width="1920" height="945" alt="screencapture-localhost-5173-delivery-boy-2026-06-20-14_21_57" src="https://github.com/user-attachments/assets/ad1416e3-e6f2-4fbd-8c68-6c695e207e0f" />
 
+### Deskstop Application
+
+<img width="1919" height="1034" alt="Screenshot 2026-06-20 143627" src="https://github.com/user-attachments/assets/9973696e-4735-4488-ab0b-9a9cf3a9a28f" />
+
+
 ---
 
 ## ⚙️ Installation
