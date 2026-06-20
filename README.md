@@ -66,8 +66,6 @@ Backend API (Node.js + Express.js)
 ⬇
 MongoDB Atlas Database
 ⬇
-Socket.io Real-Time Communication
-⬇
 Razorpay Payment Gateway
 
 ---
@@ -98,12 +96,6 @@ Razorpay Payment Gateway
 ### Payment Gateway
 
 * Razorpay
-
-### Deployment
-
-* Vercel
-* MongoDB Atlas
-
 ---
 
 ## 📂 Project Modules
@@ -206,7 +198,8 @@ Stores:
 
 ### Home Page
 
-![Home Page](./screenshots/home.png)
+<img width="1435" height="934" alt="Screenshot 2025-03-09 202112" src="https://github.com/user-attachments/assets/f73c85aa-feb5-414f-b54e-4d667e76170e" />
+
 
 ### User Registration
 
